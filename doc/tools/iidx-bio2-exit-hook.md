@@ -7,7 +7,7 @@ be useful if you want an option to exit back to your desktop without having a ke
 The exit hook lib must be loaded like any other hook lib you are already injecting to the game
 using either `inject` or `launcher` (depending on the game version). The order for the hook libs is important as they are loaded in the order specified for the inject/launcher call. The entry in the `gamestart.bat` file should look like this for inject:
 ```bat
-inject iidxhook3.dll -K iidx-bio2-exit-hook.dll bm2dx.exe ...
+inject iidxhook3.dll iidx-bio2-exit-hook.dll bm2dx.exe ...
 ```
 ...and for launcher:
 ```bat
